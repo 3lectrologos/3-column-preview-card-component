@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import {text} from "stream/consumers";
-
 function CarCard({ ...props }) {
   return (
     <div className={`flex flex-col min-h-fit gap-y-7 p-12 lg:h-[500px] ${props.bgColor}`}>
