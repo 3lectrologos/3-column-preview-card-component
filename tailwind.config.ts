@@ -8,11 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'brightorange': 'hsl(31, 77%, 52%)',
+        'darkcyan': 'hsl(184, 100%, 22%)',
+        'verydarkcyan': 'hsl(179, 100%, 13%)',
+        'transparentwhite': 'hsla(0, 0%, 100%, 0.75)',
+        'verylightgray': 'hsl(0, 0%, 95%)'
       },
+      fontFamily: {
+        'body': ['var(--font-lexend-deca)'],
+        'heading': ['var(--font-big-shoulders-display)']
+      }
     },
   },
   plugins: [],
