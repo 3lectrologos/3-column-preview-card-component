@@ -2,9 +2,9 @@ function CarCard({ ...props }) {
   return (
     <div className={`flex flex-col min-h-fit gap-y-7 p-12 lg:h-[500px] ${props.bgColor}`}>
       <img className={`w-16 mb-3`} src={props.image} alt='Sedans icon' />
-      <span className={`text-verylightgray font-heading text-[40px] leading-[40px] uppercase`}>
+      <h1 className={`text-verylightgray font-heading text-[40px] leading-[40px] uppercase`}>
         {props.title}
-      </span>
+      </h1>
       <span className={`text-transparentwhite text-[15px] leading-[25px] lg:mb-auto`}>
         {props.description}
       </span>
@@ -17,7 +17,7 @@ function CarCard({ ...props }) {
 
 export default function Home() {
   return (
-    <div className={`flex flex-col justify-center items-center lg:h-screen`}>
+    <div className={`flex flex-col bg-verylightgray justify-center items-center lg:h-screen`}>
       <div className={`py-[88px] px-6`}>
         <div className={`flex flex-col max-w-md rounded-lg overflow-hidden lg:flex-row lg:max-w-max lg:w-[920px]`}>
           <CarCard
